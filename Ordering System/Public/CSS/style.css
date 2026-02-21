@@ -37,10 +37,19 @@ body {
     margin: auto
     ;
 }
-h1{
+h1 {
     font-size: 50px;
     text-align: center;
     color: black;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+h4 {
+    font-weight: 400;
+    margin-bottom: 3vw;
 }
 
 .login-container h3 {
@@ -64,10 +73,23 @@ form input {
 form input:focus {
     border-color: #4e73df;
 }
-.forgot_password{
-    text-align: right;
+.forgot_pass_checkbox{
+    display: flex;
     margin-bottom: 15px;
+    color: black;
+    justify-content: space-between;
 }
+
+.forgot_pass_checkbox div {
+    margin-left: 1vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.forgot_pass_checkbox div input[type="checkbox"] {
+    width: 15px;
+}
+
 a{
     text-decoration: none;   
 }
@@ -76,14 +98,18 @@ a:hover{
     color: #0c2674;
 }
 
+.sign_in {
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
 /* Submit button */
 form input[type="submit"] {
-    background: #722fee;
+    background: red;
     color: white;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 25px;
-    width: 80px;
 }
 
 form input[type="submit"]:hover {
